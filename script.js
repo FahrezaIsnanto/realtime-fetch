@@ -2,7 +2,7 @@ setInterval(fetchData,1000);
 
 function fetchData(){
     const url = "https://kelompok2-gmedia.herokuapp.com/tampilbaru";
-    fetch(url)
+    fetch(url,{mode:'no-cors'})
     .then(function(res){
         return res.json();
     })
