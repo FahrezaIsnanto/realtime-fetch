@@ -5,23 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Real Time Update</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <h1>Real Time Update</h1>
-    <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Current AC</th>
-                    <th>Current DC</th>
-                    <th>Voltage AC</th>
-                    <th>Voltage DC</th>
-                    <th>Time Update</th>
-                </tr>
-            </thead>
-            <tbody id="data-ins"></tbody>
-    </table>
-    <script src="script.js"></script>
+    <div class="wrapper">
+        <h2 class="title">Real Time Update</h2>
+        <table class="table" id="myTable">
+                <thead class="thead-light">
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>Current AC</th>
+                        <th>Current DC</th>
+                        <th>Voltage AC</th>
+                        <th>Voltage DC</th>
+                        <th>Time Update</th>
+                    </tr>
+                </thead>
+                <tbody id="data-ins" class="text-center"></tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

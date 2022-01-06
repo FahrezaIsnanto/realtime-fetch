@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 800px;
+    padding: 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border: 2px solid salmon;
+    border-radius: 20px;
+}
+
+.title{
+    text-align: center;
+    color: palevioletred;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
